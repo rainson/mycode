@@ -31,3 +31,6 @@ for step in range(n_steps):
     box_cond = min(b[0], b[1]) < sigma or max(b[0], b[1]) > 1.0 - sigma
     if not (box_cond or min_dist < 4.0 * sigma ** 2):
         a[:] = b
+
+if __name__ == '__main__':
+    pass
